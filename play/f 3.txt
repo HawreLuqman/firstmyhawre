@@ -1,0 +1,85 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey[200],
+        body: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const Text(
+                  "YUSIF AHMED KHURSHED",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.5,
+                  ),
+                ),
+                const Text(
+                  "Network.dept",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    Icon(Icons.movie),
+                    Icon(Icons.movie),
+                    Icon(Icons.movie),
+                    Icon(Icons.movie),
+                    Icon(Icons.movie),
+                    Icon(Icons.movie),
+                    Icon(Icons.movie),
+                  ],
+                ),
+                const Text(
+                  "3rd grade",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    Text("Author Name"),
+                    Icon(Icons.favorite),
+                  ],
+                ),
+                const Text("7-12-2022"),
+              ],
+            ),
+          ],
+        ),
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+#mobile_applications_c1

@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey.shade900,
+        body: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Text(" title", style: TextStyle(color: Colors.white)),
+                    Text("Subtitle", style: TextStyle(color: Colors.white)),
+                    Text("write the code here",
+                        style: TextStyle(color: Colors.white)),
+                    Icon(
+                      Icons.favorite,
+                      color: Colors.red,
+                    )
+                  ]),
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: const [
+                    Text("Author s name",
+                        style: TextStyle(color: Colors.white)),
+                    Text("Author Title", style: TextStyle(color: Colors.white)),
+                  ]),
+            ]),
+        appBar: AppBar(),
+      ),
+    );
+  }
+}

@@ -1,0 +1,74 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey.shade900,
+        appBar: AppBar(
+          title: const Text('Nawek bnwsa '),
+          titleTextStyle: const TextStyle(
+            color: Color.fromARGB(255, 121, 118, 118),
+            fontSize: 50,
+          ),
+        ),
+        body: Row(
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: const [
+                Text(
+                  "favoite Icon",
+                  style: TextStyle(color: Colors.yellowAccent, fontSize: 20),
+                ),
+                Icon(
+                  Icons.favorite,
+                  color: Colors.red,
+                  size: 60,
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: const [
+                Text(
+                  "Main Icon",
+                  style: TextStyle(color: Colors.yellowAccent, fontSize: 20),
+                ),
+                Icon(
+                  Icons.mail,
+                  color: Colors.green,
+                  size: 60,
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: const [
+                Text(
+                  "access_alarm Icon",
+                  style: TextStyle(color: Colors.yellowAccent, fontSize: 20),
+                ),
+                Icon(
+                  Icons.access_alarm,
+                  color: Colors.blue,
+                  size: 60,
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

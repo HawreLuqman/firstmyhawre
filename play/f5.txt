@@ -1,0 +1,46 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(Myapp());
+}
+
+class Myapp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.white,
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children:[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text(
+                  "title",
+                  style:TextStyle(fontSize:30,),
+                ),
+                Text(
+                  "description",
+                  style:TextStyle(fontSize:30,),
+                ),
+                ],
+              ),
+             const Text("3:10",
+                  style:TextStyle(fontSize:30,),
+                  ),
+              
+              ],
+),
+        appBar: AppBar(
+          backgroundColor: Colors.amberAccent,
+          title:const Text("YUSIF app"),
+        ),
+      ),
+    );
+  }
+}
+
+#mobile_applications_c1

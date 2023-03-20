@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey.shade900,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: const [
+            Text(
+              "naw xot bnusa",
+              style: TextStyle(
+                color: Colors.yellow,
+                fontSize: 30.5,
+              ),
+            ),
+            Text(
+              "network.dept",
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 30.5,
+              ),
+            ),
+            Text(
+              "3rd grade",
+              style: TextStyle(
+                color: Colors.deepOrange,
+                fontSize: 30.5,
+              ),
+            ),
+          ],
+        ),
+        appBar: AppBar(
+          backgroundColor: Colors.yellow,
+          title: const Text("My Application"),
+          titleTextStyle: const TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+          ),
+        ),
+      ),
+    );
+  }
+}
